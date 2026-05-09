@@ -11,7 +11,7 @@ export const timeline: {
     years: '2024 → now',
     role: 'Software Developer',
     where: 'media-processing platform · riga',
-    note: 'Python + Rust platform behind virtual tours. Performance, ML pipeline integration, Kubernetes plumbing.',
+    note: 'Python + Rust platform behind virtual tours. AI/ML pipeline integration, model serving (Triton), Kubernetes plumbing.',
     dot: 'live',
   },
   {

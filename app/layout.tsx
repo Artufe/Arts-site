@@ -16,7 +16,27 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: site.name, template: `%s · ${site.name}` },
   description: site.description,
+  keywords: [
+    'AI developer',
+    'ML engineer',
+    'freelance AI consultant',
+    'machine learning infrastructure',
+    'Python',
+    'Rust',
+    'PyO3',
+    'model serving',
+    'Triton Inference Server',
+    'MLOps',
+    'AI pipeline integration',
+    'backend engineer',
+    'AI consulting',
+    'remote AI developer',
+    'Kubernetes ML',
+  ],
+  creator: site.name,
+  referrer: 'origin-when-cross-origin',
   alternates: { canonical: '/' },
+  robots: { index: true, follow: true },
   openGraph: {
     title: site.name,
     description: site.description,
@@ -29,6 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: site.name,
     description: site.description,
+    creator: '@arthurbuikis',
   },
 };
 
@@ -61,6 +82,65 @@ const websiteLd = {
   publisher: { '@id': `${site.url}/#person` },
 };
 
+const professionalServiceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': `${site.url}/#service`,
+  name: `${site.name} — AI & ML infrastructure consulting`,
+  description:
+    'Freelance AI and ML infrastructure engineering. Python, Rust, model serving, pipeline integration, MLOps. Remote consulting for teams that need AI to ship.',
+  url: site.url,
+  provider: { '@id': `${site.url}/#person` },
+  serviceType: 'AI infrastructure engineering',
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: 'Worldwide (remote)',
+  },
+  availableChannel: {
+    '@type': 'ServiceChannel',
+    serviceUrl: `${site.url}/contact/`,
+    availableLanguage: ['English', 'Latvian'],
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'AI & ML engineering services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'ML model integration & serving',
+          description: 'Integrate ML models into production pipelines with Triton Inference Server, Docker, and Kubernetes.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'AI pipeline architecture',
+          description: 'Design and build end-to-end AI/ML pipelines — data ingestion, model training orchestration, inference deployment.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Performance optimization for ML systems',
+          description: 'Profile and optimize ML inference backends in Python and Rust (PyO3). Cut hot-path latency and scale model serving.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Freelance AI backend development',
+          description: 'Solo or embedded. Twelve years of Python backend experience, available for AI infrastructure contracts.',
+        },
+      },
+    ],
+  },
+};
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${inter.variable} ${jetBrainsMono.variable}`}>
@@ -72,6 +152,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceLd) }}
         />
         <ThemeProvider>
           <HeroShader />

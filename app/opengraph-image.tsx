@@ -48,7 +48,7 @@ export default function OpengraphImage() {
             {`${site.bio.location.city.toLowerCase()} · remote · eu-time`}
           </div>
           <div style={{ display: 'flex', gap: 28, fontSize: 22, color: FG_MUTED, fontFamily: 'monospace' }}>
-            {site.bio.knowsAbout.slice(0, 4).map((tag) => (
+            {['python', 'rust', 'triton', 'kubernetes'].map((tag) => (
               <span key={tag}>{tag.toLowerCase()}</span>
             ))}
           </div>

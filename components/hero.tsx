@@ -26,11 +26,11 @@ export function Hero() {
           <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 pt-5 border-t border-[var(--rule-strong)] font-mono text-[11px]">
             <div>
               <dt className="lbl mb-1.5">Focus</dt>
-              <dd>backend · platform · perf</dd>
+              <dd>ai/ml infra · model serving · perf</dd>
             </div>
             <div>
               <dt className="lbl mb-1.5">Stack</dt>
-              <dd>python · rust (pyo3) · celery · k8s</dd>
+              <dd>python · rust (pyo3) · triton · k8s</dd>
             </div>
             <div>
               <dt className="lbl mb-1.5">Based</dt>
