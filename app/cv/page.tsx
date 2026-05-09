@@ -6,7 +6,7 @@ import { site } from '@/content/site';
 
 export const metadata: Metadata = {
   title: 'CV',
-  description: 'Senior backend / platform engineer — Python, Rust, data pipelines, Kubernetes.',
+  description: 'AI & ML infrastructure engineer — freelance / consulting. Python, Rust, PyO3, Triton Inference Server, model serving, Kubernetes, MLOps. Download CV.',
 };
 
 export default function CVPage() {

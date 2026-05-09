@@ -4,7 +4,7 @@ import { site } from '@/content/site';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch about freelance, consulting, or full-time work.',
+  description: 'Hire an AI & ML infrastructure engineer for freelance or consulting. Python, Rust, model serving, MLOps, pipeline integration. Remote, EU-time. Get in touch.',
 };
 
 const expectations = [

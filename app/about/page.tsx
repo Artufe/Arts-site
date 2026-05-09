@@ -11,7 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Backend & platform engineer · Riga · twelve-ish years in.',
+  description: 'AI & ML infrastructure engineer · Riga, LV · twelve years in Python, Rust, model serving, and ML pipeline integration. Freelance and consulting.',
 };
 
 export default function AboutPage() {

@@ -12,23 +12,25 @@ export function Hero() {
             <span className="text-[var(--accent)] mr-2">$</span>whoami --verbose
           </div>
           <h1 className="mt-6 font-serif text-[clamp(40px,5.4vw,60px)] leading-[1.02] tracking-tight font-medium">
-            Senior engineer.<br />
+            AI infrastructure<br />
+            engineer.<br />
             Ships systems<br />
             that don&apos;t break.
           </h1>
           <p className="mt-6 max-w-[44ch] text-[15px] leading-[1.75] text-[var(--fg-muted)]">
-            Python backend for about twelve years, with a bit of Rust lately. Currently working on a
-            media-processing platform — the kind of place where things need to keep moving.
+            Python backend for about twelve years, with Rust (PyO3) where it earns its keep.
+            Freelance &amp; consulting — ML model serving, pipeline integration, AI infrastructure
+            that runs in production.
           </p>
 
           <dl className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-4 border-t border-[var(--rule-strong)] font-mono text-[11px]">
             <div>
               <dt className="lbl mb-1.5">Focus</dt>
-              <dd>backend · platform · perf</dd>
+              <dd>ai/ml infra · model serving · perf</dd>
             </div>
             <div>
               <dt className="lbl mb-1.5">Stack</dt>
-              <dd>python · rust (pyo3) · celery · k8s</dd>
+              <dd>python · rust (pyo3) · triton · k8s</dd>
             </div>
             <div>
               <dt className="lbl mb-1.5">Based</dt>
