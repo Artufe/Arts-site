@@ -8,7 +8,8 @@ export type CommandAction =
   | { type: 'copy'; value: string }
   | { type: 'whoami' }
   | { type: 'help' }
-  | { type: 'plasma'; value: 'calm' | 'vivid' };
+  | { type: 'plasma'; value: 'calm' | 'vivid' }
+  | { type: 'snake' };
 
 export type CommandGroup = 'Navigate' | 'Meta' | 'Theme';
 
@@ -39,6 +40,7 @@ export const commands: Command[] = [
   { id: 'upwork', label: 'upwork', group: 'Meta', arrow: '↗', hint: '100% jss', action: { type: 'external', href: 'https://www.upwork.com/freelancers/abuikis' } },
   { id: 'whoami', label: 'whoami', group: 'Meta', arrow: '?', hint: 'inline', action: { type: 'whoami' } },
   { id: 'help', label: 'help', group: 'Meta', arrow: '?', hint: 'shortcut keys', action: { type: 'help' } },
+  { id: 'play-snake', label: 'play snake', group: 'Meta', arrow: '▶', hint: 'easter egg', action: { type: 'snake' }, keywords: ['game', 'easter egg', 'snake'] },
   { id: 'plasma-calm',  label: 'plasma calm',  group: 'Meta', arrow: '◌', hint: 'low intensity',     action: { type: 'plasma', value: 'calm'  }, keywords: ['shader', 'background'] },
   { id: 'plasma-vivid', label: 'plasma vivid', group: 'Meta', arrow: '●', hint: 'default intensity', action: { type: 'plasma', value: 'vivid' }, keywords: ['shader', 'background'] },
 
