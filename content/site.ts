@@ -3,7 +3,7 @@ export const site = {
   email: 'arthur@buikis.com',
   url: 'https://arthur.buikis.com',
   brand: 'ab.',
-  description: 'Senior full-stack engineer. Ships systems that hold up.',
+  description: 'Freelance AI & ML infrastructure engineer. Python, Rust, model serving, pipeline integration — ships systems that hold up.',
   formspreeEndpoint: 'https://formspree.io/f/xaqadvlz',
   // Newsletter provider form-submit URL. Anything that accepts a POST
   // with form-encoded `email` works — components/subscribe-form.tsx is
@@ -31,10 +31,10 @@ export const site = {
     { label: 'Upwork', href: 'https://www.upwork.com/freelancers/abuikis' },
   ],
   bio: {
-    jobTitle: 'Senior software engineer',
+    jobTitle: 'AI & ML infrastructure engineer · freelance / consulting',
     location: { city: 'Riga', country: 'LV', timezone: 'Europe/Riga' },
     summary:
-      'Backend and platform engineer based in Riga. Around twelve years in Python with Rust (PyO3) for hot paths. Currently working on a media-processing platform.',
+      'AI & ML infrastructure engineer based in Riga. About twelve years in Python with Rust (PyO3) for hot paths. Available for freelance and consulting — integrating ML models into production pipelines, building inference platforms, and shipping performance-critical AI backends.',
     knowsAbout: [
       'Python',
       'Rust',
@@ -42,12 +42,17 @@ export const site = {
       'Celery',
       'Kubernetes',
       'Postgres',
+      'AI infrastructure',
+      'ML pipeline integration',
+      'Model serving',
+      'Triton Inference Server',
+      'MLOps',
       'Backend engineering',
       'Platform engineering',
       'Performance engineering',
       'Data infrastructure',
-      'Web scraping',
-      'Machine learning systems',
+      'AI consulting',
+      'Freelance AI developer',
     ],
   },
 };

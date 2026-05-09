@@ -15,18 +15,18 @@ const path = '/about/';
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: 'AI & ML infrastructure engineer · Riga, LV · twelve years in Python, Rust, model serving, and ML pipeline integration. Freelance and consulting.',
   alternates: { canonical: path },
   openGraph: {
     type: 'website',
     title,
-    description,
+    description: 'AI & ML infrastructure engineer · Riga, LV · twelve years in Python, Rust, model serving, and ML pipeline integration. Freelance and consulting.',
     url: path,
   },
   twitter: {
     card: 'summary_large_image',
     title,
-    description,
+    description: 'AI & ML infrastructure engineer · Riga, LV · twelve years in Python, Rust, model serving, and ML pipeline integration. Freelance and consulting.',
   },
 };
 
