@@ -8,18 +8,18 @@ const path = '/contact/';
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: 'Hire an AI & ML infrastructure engineer for freelance or consulting. Python, Rust, model serving, MLOps, pipeline integration. Remote, EU-time. Get in touch.',
   alternates: { canonical: path },
   openGraph: {
     type: 'website',
     title,
-    description,
+    description: 'Hire an AI & ML infrastructure engineer for freelance or consulting. Python, Rust, model serving, MLOps, pipeline integration. Remote, EU-time. Get in touch.',
     url: path,
   },
   twitter: {
     card: 'summary_large_image',
     title,
-    description,
+    description: 'Hire an AI & ML infrastructure engineer for freelance or consulting. Python, Rust, model serving, MLOps, pipeline integration. Remote, EU-time. Get in touch.',
   },
 };
 

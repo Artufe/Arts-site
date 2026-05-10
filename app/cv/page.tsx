@@ -9,18 +9,18 @@ const path = '/cv/';
 
 export const metadata: Metadata = {
   title,
-  description,
+  description: 'AI & ML infrastructure engineer — freelance / consulting. Python, Rust, PyO3, Triton Inference Server, model serving, Kubernetes, MLOps. Download CV.',
   alternates: { canonical: path },
   openGraph: {
     type: 'website',
     title,
-    description,
+    description: 'AI & ML infrastructure engineer — freelance / consulting. Python, Rust, PyO3, Triton Inference Server, model serving, Kubernetes, MLOps. Download CV.',
     url: path,
   },
   twitter: {
     card: 'summary_large_image',
     title,
-    description,
+    description: 'AI & ML infrastructure engineer — freelance / consulting. Python, Rust, PyO3, Triton Inference Server, model serving, Kubernetes, MLOps. Download CV.',
   },
 };
 
