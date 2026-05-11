@@ -18,6 +18,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: path === '/' ? 1 : path === '/notes/' ? 0.9 : 0.7,
   }));
 
+  const feedEntry: MetadataRoute.Sitemap = [{
+    url: `${base}/feed.xml`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.5,
+  }];
+
   const workEntries: MetadataRoute.Sitemap = WORK_SLUGS.map((slug) => ({
     url: `${base}/work/${slug}/`,
     lastModified: now,
@@ -33,5 +40,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  return [...staticEntries, ...workEntries, ...noteEntries];
+  return [...staticEntries, ...feedEntry, ...workEntries, ...noteEntries];
 }
